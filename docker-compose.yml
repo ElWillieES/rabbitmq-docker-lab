@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3.11.11-management
+    restart: on-failure:5
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - ./docker-disks/rabbitmq-data:/var/lib/rabbitmq
+      - ./docker-disks/rabbitmq-log:/var/log/rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
