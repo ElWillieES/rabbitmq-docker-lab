@@ -15,7 +15,7 @@ De esta forma, podemos arrancar este laboratorio y trastear con RabbitMQ de form
 
 Algunos de los Posts de Sonar en los que se basa este Docker Compose son:
 
-* [RabbitMQ - Introducción e instalación de RabbitMQ]()
+* [RabbitMQ - Introducción e instalación de RabbitMQ](https://elwillie.es/2023/04/27/rabbitmq-introduccion-e-instalacion-de-rabbitmq/)
 
 **Puedes apoyar mi trabajo siguiéndome, haciendo "☆ Star" en el repo, o nominarme a "GitHub Star"**. Muchas gracias :-) 
 
