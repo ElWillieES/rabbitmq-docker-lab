@@ -14,7 +14,7 @@ services:
     image: rabbitmq:3.11.11-management
     restart: always  # Important, to make sure it starts on boot
     networks:
-      dns-docker-net:
+      rabbitmq-docker-net:
         ipv4_address: 192.168.17.10
     environment:
       TZ: ${TZ}
