@@ -1,10 +1,21 @@
 version: "3.4"
 
+networks:
+  rabbitmq-docker-net:
+    name: rabbitmq-docker-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.17.0/24
+
 services:
 
   rabbitmq:
     image: rabbitmq:3.11.11-management
-    restart: on-failure:5
+    restart: always  # Important, to make sure it starts on boot
+    networks:
+      dns-docker-net:
+        ipv4_address: 192.168.17.10
     environment:
       TZ: ${TZ}
     volumes:
